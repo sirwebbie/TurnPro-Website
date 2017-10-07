@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow: /Templates
+Disallow: /logs
+Allow: /
+Disallow: /test
+

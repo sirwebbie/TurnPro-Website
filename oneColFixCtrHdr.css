@@ -1,0 +1,205 @@
+@charset "utf-8";
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-color: #333333;
+}
+.oneColFixCtrHdr #container {
+	width: 980px; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px none #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding: 0px;
+	background-color: #0068B2;
+}
+.oneColFixCtrHdr #header {
+	background-color: #FFFFFF;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+}
+.oneColFixCtrHdr #container #header td {
+	font-size: .7em;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+}
+.oneColFixCtrHdr #container #header a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.oneColFixCtrHdr #container #header a:hover {
+	color: #0068B2;
+	text-decoration: underline;
+}
+.oneColFixCtrHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.oneColFixCtrHdr #mainContent {
+	padding: 0 20px;
+	color: #FFFFFF;
+	background-color: #0067B1;
+}
+.oneColFixCtrHdr #container #mainContent td {
+	vertical-align: top;
+	padding-bottom: 10px;
+}
+.oneColFixCtrHdr #container #mainContent a {
+	color: #FFFFFF;
+}
+
+.oneColFixCtrHdr #footer {
+	padding: 0;
+	color: #FFFFFF;
+	background-color: #00A452;
+	vertical-align: top;
+	margin: 0px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+	font-size: 9px;
+}
+.oneColFixCtrHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	text-align: center;
+}
+.oneColFixCtrHdr #footer a {
+	color: #FFFFFF;
+}
+.oneColFixCtrHdr #footer a:hover {
+	color: #0068B2;
+	font-size: 9px;
+	text-align: right;
+}
+#testimonial {
+	font-size: .7em;
+	font-style: italic;
+}
+#mainContent table tr td .testimonial {
+	font-style: italic;
+	font-size: .85em;
+}
+.oneColFixCtrHdr #container #mainContent .tagline {
+	font-size: 1.2em;
+	font-style: italic;
+	color: #000;
+	text-align: center;
+}
+.oneColFixCtrHdr #container #mainContent table tr td ol li {
+	font-size: .95em;
+}
+.serving {
+	font-size: .8em;
+}
+.oneColFixCtrHdr #container #mainContent table tr td .picheader {
+	font-size: 1.2em;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+.oneColFixCtrHdr #mainHomeContent {
+	color: #FFFFFF;
+	background-color: #0067B1;
+}
+.oneColFixCtrHdr #container #mainHomeContent td {
+	vertical-align: top;
+	padding-bottom: 10px;
+}
+.oneColFixCtrHdr #container #mainHomeContent a {
+	color: #FFFFFF;
+}
+.oneColFixCtrHdr #container #mainHomeContent .tagline {
+	font-size: 1.2em;
+	font-style: italic;
+	color: #000;
+	text-align: center;
+}
+.oneColFixCtrHdr #container #mainHomeContent table tr td ol li {
+	font-size: .95em;
+}
+.serving {
+	font-size: .8em;
+}
+.oneColFixCtrHdr #container #mainHomeContent table tr td .picheader {
+	font-size: 1.2em;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+.oneColFixCtrHdr #container #mainHomeContent .hmLeft {
+	color: #FFFFFF;
+	background-color: #00a452;
+	text-align: left;
+	width: 385px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+}
+.oneColFixCtrHdr #container #mainHomeContent .hmLeftInfo {
+	color: #FFFFFF;
+	background-color: #014474;
+	text-align: left;
+	width: 385px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	font-size: 0.9em;
+}
+.oneColFixCtrHdr #container #mainHomeContent .hmLeftInfo img {
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+.oneColFixCtrHdr #container #mainHomeContent .hmLeftInfo p {
+}
+.oneColFixCtrHdr #container #mainHomeContent .hmLeftInfo a {
+	font-size: .85em;
+}
+.oneColFixCtrHdr #container #mainHomeContent .rtHome h1 {
+	font-size: 1.5em;
+	font-weight: normal;
+	padding-top: 15px;
+	padding-left: 40px;
+}
+.oneColFixCtrHdr #container #mainHomeContent .rtHome p {
+	padding-left: 40px;
+	font-size: .9em;
+	padding-right: 10px;
+}
+.oneColFixCtrHdr #container #mainHomeContent .rtHome h3 {
+	font-weight: normal;
+	font-size: 1.1em;
+	padding-left: 40px;
+	padding-right: 10px;
+}
+.oneColFixCtrHdr #container #mainHomeContent .rtHome .serving {
+	font-size: .8em;
+}
+.oneColFixCtrHdr #container #mainHomeContent .rtHome img {
+	padding-left: 12px;
+	padding-top: 0px;
+}
+.oneColFixCtrHdr #container #mainHomeContent table tr td .testimonial-sig {
+	font-size: .95em;
+	font-style: italic;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin-top: 0px;
+}
+.oneColFixCtrHdr #container #mainHomeContent table tr td .testimonial {
+	line-height: 20px;
+	margin-bottom: 5px;
+}

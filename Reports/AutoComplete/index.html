@@ -1,0 +1,65 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="TP.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
+    <!-- jquery css file -->
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.2/themes/start/jquery-ui.css">
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- jquery autocomplete file -->
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.autocomplete.html.js" /></script>
+
+  </head>
+  <body>
+
+
+    XHTML
+
+  <p>Enter Account Alias</p>
+    <form action="" method="post">
+        <input type="text" placeholder="Name" id="customerAutocomplte" class="ui-autocomplete-input" autocomplete="off" />
+    </form>
+
+
+<!--autocomplete configuration -->
+<script language="javascript" type="text/javascript">
+    $(document).ready(function($){
+        $('#customerAutocomplte').autocomplete({
+    	source:'suggest_name.php',
+    	minLength:2,
+
+      select: function(event,ui){
+			var code = ui.item.id;
+			if(code != '') {
+				location.href = '/invoice.php?customercode=' + code;
+			}
+		},
+    // optional
+		html: true,
+		// optional (if other layers overlap the autocomplete list)
+		open: function(event, ui) {
+			$(".ui-autocomplete").css("z-index", 1000);
+		}
+	});
+});
+</script>
+
+
+
+
+  </body>
+</html>

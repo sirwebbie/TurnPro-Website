@@ -1,0 +1,12 @@
+.container-fluid {border: green 2px dotted;
+              margin: 3em}
+input:focus {
+                  background-color: yellow;
+              }
+.container {border: blue 3px double; padding:2em}
+.row {border: orange 1px solid}
+.col {border: pink 1px solid; margin: 2px}
+
+th,td {font-size:8px }
+
+body {background-color:blue }
